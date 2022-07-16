@@ -8785,9 +8785,9 @@ Source: &lt;a href="https://www.molex.com/pdm_docs/sd/2125280200_sd.pdf"&gt; Dat
 <attribute name="NAME" x="136.144" y="41.021" size="1.778" layer="95"/>
 <attribute name="VALUE" x="136.144" y="35.941" size="1.778" layer="96"/>
 </instance>
-<instance part="R1" gate="G$1" x="149.86" y="55.88" smashed="yes" rot="R90">
-<attribute name="NAME" x="148.3614" y="52.07" size="1.778" layer="95" rot="R90"/>
-<attribute name="VALUE" x="153.162" y="52.07" size="1.778" layer="96" rot="R90"/>
+<instance part="R1" gate="G$1" x="149.86" y="55.88" smashed="yes" rot="R270">
+<attribute name="NAME" x="151.3586" y="59.69" size="1.778" layer="95" rot="R270"/>
+<attribute name="VALUE" x="146.558" y="59.69" size="1.778" layer="96" rot="R270"/>
 </instance>
 </instances>
 <busses>
@@ -8809,9 +8809,9 @@ Source: &lt;a href="https://www.molex.com/pdm_docs/sd/2125280200_sd.pdf"&gt; Dat
 <label x="17.78" y="17.78" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="SLAVE" gate="G$1" pin="1"/>
-<wire x1="48.26" y1="10.16" x2="35.56" y2="10.16" width="0.1524" layer="91"/>
-<label x="35.56" y="10.16" size="1.778" layer="95"/>
+<pinref part="SLAVE" gate="G$1" pin="8"/>
+<wire x1="68.58" y1="17.78" x2="78.74" y2="17.78" width="0.1524" layer="91"/>
+<label x="71.12" y="17.78" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="VDD" class="0">
@@ -8864,19 +8864,14 @@ Source: &lt;a href="https://www.molex.com/pdm_docs/sd/2125280200_sd.pdf"&gt; Dat
 <label x="17.78" y="20.32" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="SLAVE" gate="G$1" pin="2"/>
-<wire x1="48.26" y1="12.7" x2="35.56" y2="12.7" width="0.1524" layer="91"/>
-<label x="35.56" y="12.7" size="1.778" layer="95"/>
-</segment>
-<segment>
-<pinref part="SLAVE" gate="G$1" pin="6"/>
-<wire x1="68.58" y1="12.7" x2="78.74" y2="12.7" width="0.1524" layer="91"/>
-<label x="71.12" y="12.7" size="1.778" layer="95"/>
-</segment>
-<segment>
 <pinref part="C3" gate="G$1" pin="2"/>
 <wire x1="134.62" y1="35.56" x2="134.62" y2="30.48" width="0.1524" layer="91"/>
 <label x="134.62" y="30.48" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="SLAVE" gate="G$1" pin="7"/>
+<wire x1="68.58" y1="15.24" x2="78.74" y2="15.24" width="0.1524" layer="91"/>
+<label x="71.12" y="15.24" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="MEGA_P2" class="0">
@@ -8926,7 +8921,7 @@ Source: &lt;a href="https://www.molex.com/pdm_docs/sd/2125280200_sd.pdf"&gt; Dat
 <wire x1="129.54" y1="58.42" x2="142.24" y2="58.42" width="0.1524" layer="91"/>
 <label x="132.08" y="58.42" size="1.778" layer="95"/>
 <wire x1="142.24" y1="58.42" x2="142.24" y2="60.96" width="0.1524" layer="91"/>
-<pinref part="R1" gate="G$1" pin="2"/>
+<pinref part="R1" gate="G$1" pin="1"/>
 <wire x1="142.24" y1="60.96" x2="149.86" y2="60.96" width="0.1524" layer="91"/>
 </segment>
 <segment>
@@ -8941,7 +8936,7 @@ Source: &lt;a href="https://www.molex.com/pdm_docs/sd/2125280200_sd.pdf"&gt; Dat
 <wire x1="129.54" y1="53.34" x2="142.24" y2="53.34" width="0.1524" layer="91"/>
 <label x="132.08" y="53.34" size="1.778" layer="95"/>
 <wire x1="142.24" y1="53.34" x2="142.24" y2="50.8" width="0.1524" layer="91"/>
-<pinref part="R1" gate="G$1" pin="1"/>
+<pinref part="R1" gate="G$1" pin="2"/>
 <wire x1="142.24" y1="50.8" x2="149.86" y2="50.8" width="0.1524" layer="91"/>
 </segment>
 <segment>

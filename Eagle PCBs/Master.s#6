@@ -9011,17 +9011,17 @@ Source: &lt;a href="https://www.molex.com/pdm_docs/sd/2125280200_sd.pdf"&gt; Dat
 <attribute name="NAME" x="49.784" y="56.261" size="1.778" layer="95"/>
 <attribute name="VALUE" x="49.784" y="51.181" size="1.778" layer="96"/>
 </instance>
-<instance part="R1" gate="G$1" x="157.48" y="40.64" smashed="yes" rot="R270">
-<attribute name="NAME" x="158.9786" y="44.45" size="1.778" layer="95" rot="R270"/>
-<attribute name="VALUE" x="154.178" y="44.45" size="1.778" layer="96" rot="R270"/>
+<instance part="R1" gate="G$1" x="157.48" y="43.18" smashed="yes" rot="R270">
+<attribute name="NAME" x="158.9786" y="46.99" size="1.778" layer="95" rot="R270"/>
+<attribute name="VALUE" x="154.178" y="46.99" size="1.778" layer="96" rot="R270"/>
 </instance>
-<instance part="Q1" gate="1" x="165.1" y="22.86" smashed="yes">
-<attribute name="NAME" x="170.18" y="25.4" size="1.778" layer="95"/>
-<attribute name="VALUE" x="170.18" y="22.86" size="1.778" layer="96"/>
+<instance part="Q1" gate="1" x="165.1" y="20.32" smashed="yes">
+<attribute name="NAME" x="170.18" y="22.86" size="1.778" layer="95"/>
+<attribute name="VALUE" x="170.18" y="20.32" size="1.778" layer="96"/>
 </instance>
-<instance part="LED_STRIP" gate="G$1" x="172.72" y="35.56" smashed="yes" rot="R90">
-<attribute name="NAME" x="165.1" y="52.07" size="1.778" layer="95" rot="R90" align="center-left"/>
-<attribute name="VALUE" x="167.64" y="52.07" size="1.778" layer="96" rot="R90" align="center-left"/>
+<instance part="LED_STRIP" gate="G$1" x="172.72" y="33.02" smashed="yes" rot="R90">
+<attribute name="NAME" x="165.1" y="49.53" size="1.778" layer="95" rot="R90" align="center-left"/>
+<attribute name="VALUE" x="167.64" y="49.53" size="1.778" layer="96" rot="R90" align="center-left"/>
 </instance>
 <instance part="SLAVE" gate="G$1" x="48.26" y="17.78" smashed="yes">
 <attribute name="NAME" x="64.77" y="25.4" size="1.778" layer="95" align="center-left"/>
@@ -9061,8 +9061,8 @@ Source: &lt;a href="https://www.molex.com/pdm_docs/sd/2125280200_sd.pdf"&gt; Dat
 </segment>
 <segment>
 <pinref part="LED_STRIP" gate="G$1" pin="1"/>
-<wire x1="175.26" y1="35.56" x2="185.42" y2="35.56" width="0.1524" layer="91"/>
-<label x="180.34" y="35.56" size="1.778" layer="95"/>
+<wire x1="175.26" y1="33.02" x2="185.42" y2="33.02" width="0.1524" layer="91"/>
+<label x="180.34" y="33.02" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="VDD" class="0">
@@ -9121,8 +9121,8 @@ Source: &lt;a href="https://www.molex.com/pdm_docs/sd/2125280200_sd.pdf"&gt; Dat
 </segment>
 <segment>
 <pinref part="Q1" gate="1" pin="E"/>
-<wire x1="167.64" y1="17.78" x2="167.64" y2="7.62" width="0.1524" layer="91"/>
-<label x="167.64" y="7.62" size="1.778" layer="95" rot="R90"/>
+<wire x1="167.64" y1="15.24" x2="167.64" y2="5.08" width="0.1524" layer="91"/>
+<label x="167.64" y="5.08" size="1.778" layer="95" rot="R90"/>
 </segment>
 <segment>
 <pinref part="SLAVE" gate="G$1" pin="6"/>
@@ -9131,8 +9131,8 @@ Source: &lt;a href="https://www.molex.com/pdm_docs/sd/2125280200_sd.pdf"&gt; Dat
 </segment>
 <segment>
 <pinref part="C3" gate="G$1" pin="2"/>
-<wire x1="134.62" y1="35.56" x2="134.62" y2="33.02" width="0.1524" layer="91"/>
-<label x="134.62" y="33.02" size="1.778" layer="95"/>
+<wire x1="134.62" y1="35.56" x2="134.62" y2="30.48" width="0.1524" layer="91"/>
+<label x="134.62" y="30.48" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="MEGA_P2" class="0">
@@ -9203,8 +9203,8 @@ Source: &lt;a href="https://www.molex.com/pdm_docs/sd/2125280200_sd.pdf"&gt; Dat
 <net name="DIMMER_PWM_PIN" class="0">
 <segment>
 <pinref part="R1" gate="G$1" pin="1"/>
-<wire x1="157.48" y1="45.72" x2="157.48" y2="71.12" width="0.1524" layer="91"/>
-<label x="157.48" y="45.72" size="1.778" layer="95" rot="R90"/>
+<wire x1="157.48" y1="48.26" x2="157.48" y2="71.12" width="0.1524" layer="91"/>
+<label x="157.48" y="48.26" size="1.778" layer="95" rot="R90"/>
 <pinref part="LED_PWM" gate="G$1" pin="1"/>
 <wire x1="157.48" y1="71.12" x2="174.244" y2="71.12" width="0.1524" layer="91"/>
 </segment>
@@ -9212,18 +9212,18 @@ Source: &lt;a href="https://www.molex.com/pdm_docs/sd/2125280200_sd.pdf"&gt; Dat
 <net name="N$1" class="0">
 <segment>
 <pinref part="R1" gate="G$1" pin="2"/>
-<wire x1="157.48" y1="35.56" x2="157.48" y2="22.86" width="0.1524" layer="91"/>
+<wire x1="157.48" y1="38.1" x2="157.48" y2="20.32" width="0.1524" layer="91"/>
 <pinref part="Q1" gate="1" pin="B"/>
-<wire x1="157.48" y1="22.86" x2="162.56" y2="22.86" width="0.1524" layer="91"/>
+<wire x1="157.48" y1="20.32" x2="162.56" y2="20.32" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="LED_GND" class="0">
 <segment>
 <pinref part="Q1" gate="1" pin="C"/>
-<wire x1="167.64" y1="27.94" x2="167.64" y2="35.56" width="0.1524" layer="91"/>
+<wire x1="167.64" y1="25.4" x2="167.64" y2="33.02" width="0.1524" layer="91"/>
 <pinref part="LED_STRIP" gate="G$1" pin="2"/>
-<wire x1="167.64" y1="35.56" x2="172.72" y2="35.56" width="0.1524" layer="91"/>
-<label x="167.64" y="35.56" size="1.778" layer="95" rot="R90"/>
+<wire x1="167.64" y1="33.02" x2="172.72" y2="33.02" width="0.1524" layer="91"/>
+<label x="167.64" y="33.02" size="1.778" layer="95" rot="R90"/>
 </segment>
 </net>
 </nets>

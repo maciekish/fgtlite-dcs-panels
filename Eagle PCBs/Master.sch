@@ -8742,24 +8742,24 @@ Source: &lt;a href="https://www.molex.com/pdm_docs/sd/2125280200_sd.pdf"&gt; Dat
 <attribute name="NAME" x="106.68" y="69.85" size="1.778" layer="95"/>
 <attribute name="VALUE" x="106.68" y="40.64" size="1.778" layer="96"/>
 </instance>
-<instance part="MEGA" gate="-1" x="116.84" y="27.94" smashed="yes">
-<attribute name="NAME" x="119.38" y="27.178" size="1.524" layer="95"/>
-<attribute name="VALUE" x="116.078" y="29.337" size="1.778" layer="96"/>
-</instance>
-<instance part="MEGA" gate="-2" x="116.84" y="25.4" smashed="yes">
+<instance part="MEGA" gate="-1" x="116.84" y="25.4" smashed="yes">
 <attribute name="NAME" x="119.38" y="24.638" size="1.524" layer="95"/>
+<attribute name="VALUE" x="116.078" y="26.797" size="1.778" layer="96"/>
 </instance>
-<instance part="MEGA" gate="-3" x="116.84" y="22.86" smashed="yes">
+<instance part="MEGA" gate="-2" x="116.84" y="22.86" smashed="yes">
 <attribute name="NAME" x="119.38" y="22.098" size="1.524" layer="95"/>
 </instance>
-<instance part="MEGA" gate="-4" x="116.84" y="20.32" smashed="yes">
+<instance part="MEGA" gate="-3" x="116.84" y="20.32" smashed="yes">
 <attribute name="NAME" x="119.38" y="19.558" size="1.524" layer="95"/>
 </instance>
-<instance part="MEGA" gate="-5" x="116.84" y="17.78" smashed="yes">
+<instance part="MEGA" gate="-4" x="116.84" y="17.78" smashed="yes">
 <attribute name="NAME" x="119.38" y="17.018" size="1.524" layer="95"/>
 </instance>
-<instance part="MEGA" gate="-6" x="116.84" y="15.24" smashed="yes">
+<instance part="MEGA" gate="-5" x="116.84" y="15.24" smashed="yes">
 <attribute name="NAME" x="119.38" y="14.478" size="1.524" layer="95"/>
+</instance>
+<instance part="MEGA" gate="-6" x="116.84" y="12.7" smashed="yes">
+<attribute name="NAME" x="119.38" y="11.938" size="1.524" layer="95"/>
 </instance>
 <instance part="PSU" gate="G$1" x="7.62" y="17.78" smashed="yes">
 <attribute name="NAME" x="5.08" y="21.59" size="1.778" layer="95"/>
@@ -8781,19 +8781,22 @@ Source: &lt;a href="https://www.molex.com/pdm_docs/sd/2125280200_sd.pdf"&gt; Dat
 <attribute name="NAME" x="64.77" y="25.4" size="1.778" layer="95" align="center-left"/>
 <attribute name="VALUE" x="64.77" y="22.86" size="1.778" layer="96" align="center-left"/>
 </instance>
-<instance part="C3" gate="G$1" x="134.62" y="40.64" smashed="yes">
-<attribute name="NAME" x="136.144" y="41.021" size="1.778" layer="95"/>
-<attribute name="VALUE" x="136.144" y="35.941" size="1.778" layer="96"/>
+<instance part="C3" gate="G$1" x="139.7" y="35.56" smashed="yes">
+<attribute name="NAME" x="141.224" y="35.941" size="1.778" layer="95"/>
+<attribute name="VALUE" x="141.224" y="30.861" size="1.778" layer="96"/>
 </instance>
 <instance part="R1" gate="G$1" x="149.86" y="55.88" smashed="yes" rot="R270">
 <attribute name="NAME" x="151.3586" y="59.69" size="1.778" layer="95" rot="R270"/>
 <attribute name="VALUE" x="146.558" y="59.69" size="1.778" layer="96" rot="R270"/>
 </instance>
+<instance part="RS485-MASTER" gate="P" x="116.84" y="35.56" smashed="yes" rot="R90">
+<attribute name="NAME" x="117.602" y="34.798" size="1.778" layer="95" rot="R180"/>
+</instance>
 </instances>
 <busses>
 </busses>
 <nets>
-<net name="VCC" class="0">
+<net name="VCC12" class="0">
 <segment>
 <pinref part="5V-VRR" gate="A1" pin="VI"/>
 <label x="12.7" y="66.04" size="1.778" layer="95" rot="R90"/>
@@ -8814,7 +8817,7 @@ Source: &lt;a href="https://www.molex.com/pdm_docs/sd/2125280200_sd.pdf"&gt; Dat
 <label x="71.12" y="17.78" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="VDD" class="0">
+<net name="VCC" class="0">
 <segment>
 <pinref part="5V-VRR" gate="A1" pin="VO"/>
 <wire x1="45.72" y1="66.04" x2="48.26" y2="66.04" width="0.1524" layer="91"/>
@@ -8826,13 +8829,18 @@ Source: &lt;a href="https://www.molex.com/pdm_docs/sd/2125280200_sd.pdf"&gt; Dat
 </segment>
 <segment>
 <pinref part="MEGA" gate="-1" pin="S"/>
-<wire x1="114.3" y1="27.94" x2="106.68" y2="27.94" width="0.1524" layer="91"/>
-<label x="114.3" y="27.94" size="1.778" layer="95" rot="R180"/>
+<wire x1="114.3" y1="25.4" x2="106.68" y2="25.4" width="0.1524" layer="91"/>
+<label x="114.3" y="25.4" size="1.778" layer="95" rot="R180"/>
 </segment>
 <segment>
 <pinref part="C3" gate="G$1" pin="1"/>
-<wire x1="134.62" y1="43.18" x2="134.62" y2="45.72" width="0.1524" layer="91"/>
-<label x="134.62" y="45.72" size="1.778" layer="95"/>
+<wire x1="139.7" y1="38.1" x2="139.7" y2="40.64" width="0.1524" layer="91"/>
+<label x="139.7" y="40.64" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="RS485-MASTER" gate="P" pin="VCC"/>
+<wire x1="109.22" y1="35.56" x2="106.68" y2="35.56" width="0.1524" layer="91"/>
+<label x="104.14" y="35.56" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="GND" class="0">
@@ -8855,8 +8863,8 @@ Source: &lt;a href="https://www.molex.com/pdm_docs/sd/2125280200_sd.pdf"&gt; Dat
 </segment>
 <segment>
 <pinref part="MEGA" gate="-2" pin="S"/>
-<wire x1="114.3" y1="25.4" x2="106.68" y2="25.4" width="0.1524" layer="91"/>
-<label x="114.3" y="25.4" size="1.778" layer="95" rot="R180"/>
+<wire x1="114.3" y1="22.86" x2="106.68" y2="22.86" width="0.1524" layer="91"/>
+<label x="114.3" y="22.86" size="1.778" layer="95" rot="R180"/>
 </segment>
 <segment>
 <pinref part="PSU" gate="G$1" pin="1"/>
@@ -8865,13 +8873,18 @@ Source: &lt;a href="https://www.molex.com/pdm_docs/sd/2125280200_sd.pdf"&gt; Dat
 </segment>
 <segment>
 <pinref part="C3" gate="G$1" pin="2"/>
-<wire x1="134.62" y1="35.56" x2="134.62" y2="30.48" width="0.1524" layer="91"/>
-<label x="134.62" y="30.48" size="1.778" layer="95"/>
+<wire x1="139.7" y1="30.48" x2="139.7" y2="25.4" width="0.1524" layer="91"/>
+<label x="139.7" y="25.4" size="1.778" layer="95"/>
 </segment>
 <segment>
 <pinref part="SLAVE" gate="G$1" pin="7"/>
 <wire x1="68.58" y1="15.24" x2="78.74" y2="15.24" width="0.1524" layer="91"/>
 <label x="71.12" y="15.24" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="RS485-MASTER" gate="P" pin="GND"/>
+<wire x1="124.46" y1="35.56" x2="127" y2="35.56" width="0.1524" layer="91"/>
+<label x="124.46" y="35.56" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="MEGA_P2" class="0">
@@ -8887,8 +8900,8 @@ Source: &lt;a href="https://www.molex.com/pdm_docs/sd/2125280200_sd.pdf"&gt; Dat
 </segment>
 <segment>
 <pinref part="MEGA" gate="-4" pin="S"/>
-<wire x1="114.3" y1="20.32" x2="106.68" y2="20.32" width="0.1524" layer="91"/>
-<label x="114.3" y="20.32" size="1.778" layer="95" rot="R180"/>
+<wire x1="114.3" y1="17.78" x2="106.68" y2="17.78" width="0.1524" layer="91"/>
+<label x="114.3" y="17.78" size="1.778" layer="95" rot="R180"/>
 </segment>
 </net>
 <net name="MEGA_P19" class="0">
@@ -8899,8 +8912,8 @@ Source: &lt;a href="https://www.molex.com/pdm_docs/sd/2125280200_sd.pdf"&gt; Dat
 </segment>
 <segment>
 <pinref part="MEGA" gate="-3" pin="S"/>
-<wire x1="114.3" y1="22.86" x2="106.68" y2="22.86" width="0.1524" layer="91"/>
-<label x="114.3" y="22.86" size="1.778" layer="95" rot="R180"/>
+<wire x1="114.3" y1="20.32" x2="106.68" y2="20.32" width="0.1524" layer="91"/>
+<label x="114.3" y="20.32" size="1.778" layer="95" rot="R180"/>
 </segment>
 </net>
 <net name="MEGA_P18" class="0">
@@ -8911,8 +8924,8 @@ Source: &lt;a href="https://www.molex.com/pdm_docs/sd/2125280200_sd.pdf"&gt; Dat
 </segment>
 <segment>
 <pinref part="MEGA" gate="-5" pin="S"/>
-<wire x1="114.3" y1="17.78" x2="106.68" y2="17.78" width="0.1524" layer="91"/>
-<label x="114.3" y="17.78" size="1.778" layer="95" rot="R180"/>
+<wire x1="114.3" y1="15.24" x2="106.68" y2="15.24" width="0.1524" layer="91"/>
+<label x="114.3" y="15.24" size="1.778" layer="95" rot="R180"/>
 </segment>
 </net>
 <net name="RS485_B" class="0">
@@ -8948,6 +8961,10 @@ Source: &lt;a href="https://www.molex.com/pdm_docs/sd/2125280200_sd.pdf"&gt; Dat
 </nets>
 </sheet>
 </sheets>
+<errors>
+<approved hash="101,1,114.3,12.7,MEGA-6,S,,,,"/>
+<approved hash="113,1,119.108,25.4,MEGA,,,,,"/>
+</errors>
 </schematic>
 </drawing>
 <compatibility>

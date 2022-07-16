@@ -8793,7 +8793,7 @@ Source: &lt;a href="https://www.molex.com/pdm_docs/sd/2125280200_sd.pdf"&gt; Dat
 <busses>
 </busses>
 <nets>
-<net name="VCC" class="0">
+<net name="VCC12" class="0">
 <segment>
 <pinref part="5V-VRR" gate="A1" pin="VI"/>
 <label x="12.7" y="66.04" size="1.778" layer="95" rot="R90"/>
@@ -8809,12 +8809,12 @@ Source: &lt;a href="https://www.molex.com/pdm_docs/sd/2125280200_sd.pdf"&gt; Dat
 <label x="17.78" y="17.78" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="SLAVE" gate="G$1" pin="1"/>
-<wire x1="48.26" y1="10.16" x2="35.56" y2="10.16" width="0.1524" layer="91"/>
-<label x="35.56" y="10.16" size="1.778" layer="95"/>
+<pinref part="SLAVE" gate="G$1" pin="8"/>
+<wire x1="68.58" y1="17.78" x2="78.74" y2="17.78" width="0.1524" layer="91"/>
+<label x="71.12" y="17.78" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="VDD" class="0">
+<net name="VCC" class="0">
 <segment>
 <pinref part="5V-VRR" gate="A1" pin="VO"/>
 <wire x1="45.72" y1="66.04" x2="48.26" y2="66.04" width="0.1524" layer="91"/>
@@ -8864,14 +8864,14 @@ Source: &lt;a href="https://www.molex.com/pdm_docs/sd/2125280200_sd.pdf"&gt; Dat
 <label x="17.78" y="20.32" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="SLAVE" gate="G$1" pin="2"/>
-<wire x1="48.26" y1="12.7" x2="35.56" y2="12.7" width="0.1524" layer="91"/>
-<label x="35.56" y="12.7" size="1.778" layer="95"/>
-</segment>
-<segment>
 <pinref part="C3" gate="G$1" pin="2"/>
 <wire x1="134.62" y1="35.56" x2="134.62" y2="30.48" width="0.1524" layer="91"/>
 <label x="134.62" y="30.48" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="SLAVE" gate="G$1" pin="7"/>
+<wire x1="68.58" y1="15.24" x2="78.74" y2="15.24" width="0.1524" layer="91"/>
+<label x="71.12" y="15.24" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="MEGA_P2" class="0">
@@ -8948,6 +8948,10 @@ Source: &lt;a href="https://www.molex.com/pdm_docs/sd/2125280200_sd.pdf"&gt; Dat
 </nets>
 </sheet>
 </sheets>
+<errors>
+<approved hash="101,1,114.3,15.24,MEGA-6,S,,,,"/>
+<approved hash="113,1,119.108,27.94,MEGA,,,,,"/>
+</errors>
 </schematic>
 </drawing>
 <compatibility>

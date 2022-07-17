@@ -8141,69 +8141,6 @@ Source: &lt;a href="https://www.molex.com/pdm_docs/sd/2125280200_sd.pdf"&gt; Dat
 </deviceset>
 </devicesets>
 </library>
-<library name="pinhead" urn="urn:adsk.eagle:library:325">
-<description>&lt;b&gt;Pin Header Connectors&lt;/b&gt;&lt;p&gt;
-&lt;author&gt;Created by librarian@cadsoft.de&lt;/author&gt;</description>
-<packages>
-<package name="1X01" urn="urn:adsk.eagle:footprint:22382/1" library_version="4">
-<description>&lt;b&gt;PIN HEADER&lt;/b&gt;</description>
-<wire x1="-0.635" y1="1.27" x2="0.635" y2="1.27" width="0.1524" layer="21"/>
-<wire x1="0.635" y1="1.27" x2="1.27" y2="0.635" width="0.1524" layer="21"/>
-<wire x1="1.27" y1="0.635" x2="1.27" y2="-0.635" width="0.1524" layer="21"/>
-<wire x1="1.27" y1="-0.635" x2="0.635" y2="-1.27" width="0.1524" layer="21"/>
-<wire x1="-1.27" y1="0.635" x2="-1.27" y2="-0.635" width="0.1524" layer="21"/>
-<wire x1="-0.635" y1="1.27" x2="-1.27" y2="0.635" width="0.1524" layer="21"/>
-<wire x1="-1.27" y1="-0.635" x2="-0.635" y2="-1.27" width="0.1524" layer="21"/>
-<wire x1="0.635" y1="-1.27" x2="-0.635" y2="-1.27" width="0.1524" layer="21"/>
-<pad name="1" x="0" y="0" drill="1.016" shape="octagon"/>
-<text x="-1.3462" y="1.8288" size="1.27" layer="25" ratio="10">&gt;NAME</text>
-<text x="-1.27" y="-3.175" size="1.27" layer="27">&gt;VALUE</text>
-<rectangle x1="-0.254" y1="-0.254" x2="0.254" y2="0.254" layer="51"/>
-</package>
-</packages>
-<packages3d>
-<package3d name="1X01" urn="urn:adsk.eagle:package:22485/2" type="model" library_version="4">
-<description>PIN HEADER</description>
-<packageinstances>
-<packageinstance name="1X01"/>
-</packageinstances>
-</package3d>
-</packages3d>
-<symbols>
-<symbol name="PINHD1" urn="urn:adsk.eagle:symbol:22381/1" library_version="4">
-<wire x1="-6.35" y1="-2.54" x2="1.27" y2="-2.54" width="0.4064" layer="94"/>
-<wire x1="1.27" y1="-2.54" x2="1.27" y2="2.54" width="0.4064" layer="94"/>
-<wire x1="1.27" y1="2.54" x2="-6.35" y2="2.54" width="0.4064" layer="94"/>
-<wire x1="-6.35" y1="2.54" x2="-6.35" y2="-2.54" width="0.4064" layer="94"/>
-<text x="-6.35" y="3.175" size="1.778" layer="95">&gt;NAME</text>
-<text x="-6.35" y="-5.08" size="1.778" layer="96">&gt;VALUE</text>
-<pin name="1" x="-2.54" y="0" visible="pad" length="short" direction="pas" function="dot"/>
-</symbol>
-</symbols>
-<devicesets>
-<deviceset name="PINHD-1X1" urn="urn:adsk.eagle:component:22540/3" prefix="JP" uservalue="yes" library_version="4">
-<description>&lt;b&gt;PIN HEADER&lt;/b&gt;</description>
-<gates>
-<gate name="G$1" symbol="PINHD1" x="0" y="0"/>
-</gates>
-<devices>
-<device name="" package="1X01">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-</connects>
-<package3dinstances>
-<package3dinstance package3d_urn="urn:adsk.eagle:package:22485/2"/>
-</package3dinstances>
-<technologies>
-<technology name="">
-<attribute name="POPULARITY" value="64" constant="no"/>
-</technology>
-</technologies>
-</device>
-</devices>
-</deviceset>
-</devicesets>
-</library>
 <library name="A10 Library">
 <packages>
 <package name="DIL08" urn="urn:adsk.eagle:footprint:29416/1">
@@ -8811,7 +8748,6 @@ http://www.fairchildsemi.com/ds/LM/LM7805.pdf</description>
 <part name="R1" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="0207/10" package3d_urn="urn:adsk.eagle:package:23491/2" value="2.2k"/>
 <part name="Q1" library="transistor-power" library_urn="urn:adsk.eagle:library:400" deviceset="TIP120" device="" package3d_urn="urn:adsk.eagle:package:29488/1"/>
 <part name="LED_STRIP" library="SamacSys_Parts" deviceset="215760-3002" device=""/>
-<part name="LED_PWM" library="pinhead" library_urn="urn:adsk.eagle:library:325" deviceset="PINHD-1X1" device="" package3d_urn="urn:adsk.eagle:package:22485/2" value="Header"/>
 <part name="RS485-SLAVE-1" library="A10 Library" deviceset="MAX487CPA" device="" package3d_urn="urn:adsk.eagle:package:29519/2"/>
 <part name="NANO-1" library="con-molex" library_urn="urn:adsk.eagle:library:165" deviceset="22-23-2061" device="" package3d_urn="urn:adsk.eagle:package:8078637/1" value="6P"/>
 <part name="5V-VRR" library="linear" library_urn="urn:adsk.eagle:library:262" deviceset="78*" device="T" package3d_urn="urn:adsk.eagle:package:16414/1" technology="05" value="L7805CV"/>
@@ -8879,21 +8815,17 @@ http://www.fairchildsemi.com/ds/LM/LM7805.pdf</description>
 <wire x1="355.6" y1="2.54" x2="355.6" y2="83.82" width="0.1524" layer="97"/>
 </plain>
 <instances>
-<instance part="R1" gate="G$1" x="10.16" y="43.18" smashed="yes" rot="R270">
-<attribute name="NAME" x="11.6586" y="46.99" size="1.778" layer="95" rot="R270"/>
-<attribute name="VALUE" x="6.858" y="46.99" size="1.778" layer="96" rot="R270"/>
+<instance part="R1" gate="G$1" x="10.16" y="48.26" smashed="yes" rot="R270">
+<attribute name="NAME" x="11.6586" y="52.07" size="1.778" layer="95" rot="R270"/>
+<attribute name="VALUE" x="6.858" y="52.07" size="1.778" layer="96" rot="R270"/>
 </instance>
-<instance part="Q1" gate="1" x="17.78" y="20.32" smashed="yes">
-<attribute name="NAME" x="22.86" y="22.86" size="1.778" layer="95"/>
-<attribute name="VALUE" x="22.86" y="20.32" size="1.778" layer="96"/>
+<instance part="Q1" gate="1" x="17.78" y="25.4" smashed="yes">
+<attribute name="NAME" x="22.86" y="27.94" size="1.778" layer="95"/>
+<attribute name="VALUE" x="22.86" y="25.4" size="1.778" layer="96"/>
 </instance>
-<instance part="LED_STRIP" gate="G$1" x="25.4" y="33.02" smashed="yes" rot="R90">
-<attribute name="NAME" x="17.78" y="49.53" size="1.778" layer="95" rot="R90" align="center-left"/>
-<attribute name="VALUE" x="20.32" y="49.53" size="1.778" layer="96" rot="R90" align="center-left"/>
-</instance>
-<instance part="LED_PWM" gate="G$1" x="29.464" y="71.12" smashed="yes">
-<attribute name="NAME" x="23.114" y="74.295" size="1.778" layer="95"/>
-<attribute name="VALUE" x="23.114" y="66.04" size="1.778" layer="96"/>
+<instance part="LED_STRIP" gate="G$1" x="25.4" y="38.1" smashed="yes" rot="R90">
+<attribute name="NAME" x="17.78" y="54.61" size="1.778" layer="95" rot="R90" align="center-left"/>
+<attribute name="VALUE" x="20.32" y="54.61" size="1.778" layer="96" rot="R90" align="center-left"/>
 </instance>
 <instance part="RS485-SLAVE-1" gate="G$1" x="160.02" y="55.88" smashed="yes">
 <attribute name="NAME" x="149.86" y="69.85" size="1.778" layer="95"/>
@@ -9123,8 +9055,8 @@ http://www.fairchildsemi.com/ds/LM/LM7805.pdf</description>
 <net name="GND" class="0">
 <segment>
 <pinref part="Q1" gate="1" pin="E"/>
-<wire x1="20.32" y1="15.24" x2="20.32" y2="5.08" width="0.1524" layer="91"/>
-<label x="20.32" y="5.08" size="1.778" layer="95" rot="R90"/>
+<wire x1="20.32" y1="20.32" x2="20.32" y2="10.16" width="0.1524" layer="91"/>
+<label x="20.32" y="10.16" size="1.778" layer="95" rot="R90"/>
 </segment>
 <segment>
 <pinref part="5V-VRR" gate="A1" pin="GND"/>
@@ -9214,30 +9146,21 @@ http://www.fairchildsemi.com/ds/LM/LM7805.pdf</description>
 <label x="396.24" y="35.56" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="DIMMER_PWM_PIN" class="0">
-<segment>
-<pinref part="R1" gate="G$1" pin="1"/>
-<wire x1="10.16" y1="48.26" x2="10.16" y2="71.12" width="0.1524" layer="91"/>
-<label x="10.16" y="48.26" size="1.778" layer="95" rot="R90"/>
-<pinref part="LED_PWM" gate="G$1" pin="1"/>
-<wire x1="10.16" y1="71.12" x2="26.924" y2="71.12" width="0.1524" layer="91"/>
-</segment>
-</net>
 <net name="N$1" class="0">
 <segment>
 <pinref part="R1" gate="G$1" pin="2"/>
-<wire x1="10.16" y1="38.1" x2="10.16" y2="20.32" width="0.1524" layer="91"/>
+<wire x1="10.16" y1="43.18" x2="10.16" y2="25.4" width="0.1524" layer="91"/>
 <pinref part="Q1" gate="1" pin="B"/>
-<wire x1="10.16" y1="20.32" x2="15.24" y2="20.32" width="0.1524" layer="91"/>
+<wire x1="10.16" y1="25.4" x2="15.24" y2="25.4" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="LED_GND" class="0">
 <segment>
 <pinref part="Q1" gate="1" pin="C"/>
-<wire x1="20.32" y1="25.4" x2="20.32" y2="33.02" width="0.1524" layer="91"/>
+<wire x1="20.32" y1="30.48" x2="20.32" y2="38.1" width="0.1524" layer="91"/>
 <pinref part="LED_STRIP" gate="G$1" pin="2"/>
-<wire x1="20.32" y1="33.02" x2="25.4" y2="33.02" width="0.1524" layer="91"/>
-<label x="20.32" y="33.02" size="1.778" layer="95" rot="R90"/>
+<wire x1="20.32" y1="38.1" x2="25.4" y2="38.1" width="0.1524" layer="91"/>
+<label x="20.32" y="38.1" size="1.778" layer="95" rot="R90"/>
 </segment>
 </net>
 <net name="VCC12" class="0">
@@ -9262,8 +9185,8 @@ http://www.fairchildsemi.com/ds/LM/LM7805.pdf</description>
 </segment>
 <segment>
 <pinref part="LED_STRIP" gate="G$1" pin="1"/>
-<wire x1="27.94" y1="33.02" x2="38.1" y2="33.02" width="0.1524" layer="91"/>
-<label x="33.02" y="33.02" size="1.778" layer="95"/>
+<wire x1="27.94" y1="38.1" x2="38.1" y2="38.1" width="0.1524" layer="91"/>
+<label x="33.02" y="38.1" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="RS485_B" class="0">
@@ -9516,6 +9439,18 @@ http://www.fairchildsemi.com/ds/LM/LM7805.pdf</description>
 <pinref part="NANO-4" gate="-5" pin="S"/>
 <wire x1="386.08" y1="15.24" x2="378.46" y2="15.24" width="0.1524" layer="91"/>
 <label x="386.08" y="15.24" size="1.778" layer="95" rot="R180"/>
+</segment>
+</net>
+<net name="NANO_1_DIM" class="0">
+<segment>
+<pinref part="R1" gate="G$1" pin="1"/>
+<wire x1="10.16" y1="53.34" x2="10.16" y2="71.12" width="0.1524" layer="91"/>
+<label x="10.16" y="55.88" size="1.778" layer="95" rot="R90"/>
+</segment>
+<segment>
+<pinref part="NANO-1" gate="-6" pin="S"/>
+<wire x1="157.48" y1="12.7" x2="149.86" y2="12.7" width="0.1524" layer="91"/>
+<label x="142.24" y="10.16" size="1.778" layer="95"/>
 </segment>
 </net>
 </nets>

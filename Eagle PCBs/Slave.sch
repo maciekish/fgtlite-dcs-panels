@@ -8745,7 +8745,7 @@ http://www.fairchildsemi.com/ds/LM/LM7805.pdf</description>
 </class>
 </classes>
 <parts>
-<part name="R1" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="0207/10" package3d_urn="urn:adsk.eagle:package:23491/2" value="2.2k"/>
+<part name="R1" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="0207/10" package3d_urn="urn:adsk.eagle:package:23491/2" value="1K"/>
 <part name="Q1" library="transistor-power" library_urn="urn:adsk.eagle:library:400" deviceset="TIP120" device="" package3d_urn="urn:adsk.eagle:package:29488/1"/>
 <part name="LED_STRIP" library="SamacSys_Parts" deviceset="215760-3002" device=""/>
 <part name="RS485-SLAVE-1" library="A10 Library" deviceset="MAX487CPA" device="" package3d_urn="urn:adsk.eagle:package:29519/2"/>

@@ -8825,6 +8825,14 @@ http://www.fairchildsemi.com/ds/LM/LM7805.pdf</description>
 <part name="NANO-2" library="con-molex" library_urn="urn:adsk.eagle:library:165" deviceset="22-23-2061" device="" package3d_urn="urn:adsk.eagle:package:8078637/1"/>
 <part name="C4" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="025-025X050" package3d_urn="urn:adsk.eagle:package:23629/2" value="0.1uF"/>
 <part name="R3" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="0207/10" package3d_urn="urn:adsk.eagle:package:23491/2" value="120Ω OPT"/>
+<part name="RS485-SLAVE-3" library="A10 Library" deviceset="MAX487CPA" device="" package3d_urn="urn:adsk.eagle:package:29519/2"/>
+<part name="NANO-3" library="con-molex" library_urn="urn:adsk.eagle:library:165" deviceset="22-23-2061" device="" package3d_urn="urn:adsk.eagle:package:8078637/1"/>
+<part name="C5" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="025-025X050" package3d_urn="urn:adsk.eagle:package:23629/2" value="0.1uF"/>
+<part name="R4" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="0207/10" package3d_urn="urn:adsk.eagle:package:23491/2" value="120Ω OPT"/>
+<part name="RS485-SLAVE-4" library="A10 Library" deviceset="MAX487CPA" device="" package3d_urn="urn:adsk.eagle:package:29519/2"/>
+<part name="NANO-4" library="con-molex" library_urn="urn:adsk.eagle:library:165" deviceset="22-23-2061" device="" package3d_urn="urn:adsk.eagle:package:8078637/1"/>
+<part name="C6" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="025-025X050" package3d_urn="urn:adsk.eagle:package:23629/2" value="0.1uF"/>
+<part name="R5" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="0207/10" package3d_urn="urn:adsk.eagle:package:23491/2" value="120Ω OPT"/>
 </parts>
 <sheets>
 <sheet>
@@ -8859,6 +8867,16 @@ http://www.fairchildsemi.com/ds/LM/LM7805.pdf</description>
 <wire x1="276.86" y1="83.82" x2="276.86" y2="2.54" width="0.1524" layer="97"/>
 <wire x1="276.86" y1="2.54" x2="203.2" y2="2.54" width="0.1524" layer="97"/>
 <wire x1="203.2" y1="2.54" x2="203.2" y2="83.82" width="0.1524" layer="97"/>
+<text x="281.94" y="78.74" size="1.778" layer="97">Arduino Nano 3</text>
+<wire x1="279.4" y1="83.82" x2="353.06" y2="83.82" width="0.1524" layer="97"/>
+<wire x1="353.06" y1="83.82" x2="353.06" y2="2.54" width="0.1524" layer="97"/>
+<wire x1="353.06" y1="2.54" x2="279.4" y2="2.54" width="0.1524" layer="97"/>
+<wire x1="279.4" y1="2.54" x2="279.4" y2="83.82" width="0.1524" layer="97"/>
+<text x="358.14" y="78.74" size="1.778" layer="97">Arduino Nano 4</text>
+<wire x1="355.6" y1="83.82" x2="429.26" y2="83.82" width="0.1524" layer="97"/>
+<wire x1="429.26" y1="83.82" x2="429.26" y2="2.54" width="0.1524" layer="97"/>
+<wire x1="429.26" y1="2.54" x2="355.6" y2="2.54" width="0.1524" layer="97"/>
+<wire x1="355.6" y1="2.54" x2="355.6" y2="83.82" width="0.1524" layer="97"/>
 </plain>
 <instances>
 <instance part="R1" gate="G$1" x="10.16" y="43.18" smashed="yes" rot="R270">
@@ -8959,6 +8977,74 @@ http://www.fairchildsemi.com/ds/LM/LM7805.pdf</description>
 <instance part="RS485-SLAVE-2" gate="P" x="236.22" y="35.56" smashed="yes" rot="R90">
 <attribute name="NAME" x="236.982" y="34.798" size="1.778" layer="95" rot="R180"/>
 </instance>
+<instance part="RS485-SLAVE-3" gate="G$1" x="312.42" y="55.88" smashed="yes">
+<attribute name="NAME" x="302.26" y="69.85" size="1.778" layer="95"/>
+<attribute name="VALUE" x="302.26" y="40.64" size="1.778" layer="96"/>
+</instance>
+<instance part="NANO-3" gate="-1" x="312.42" y="25.4" smashed="yes">
+<attribute name="NAME" x="314.96" y="24.638" size="1.524" layer="95"/>
+<attribute name="VALUE" x="311.658" y="26.797" size="1.778" layer="96"/>
+</instance>
+<instance part="NANO-3" gate="-2" x="312.42" y="22.86" smashed="yes">
+<attribute name="NAME" x="314.96" y="22.098" size="1.524" layer="95"/>
+</instance>
+<instance part="NANO-3" gate="-3" x="312.42" y="20.32" smashed="yes">
+<attribute name="NAME" x="314.96" y="19.558" size="1.524" layer="95"/>
+</instance>
+<instance part="NANO-3" gate="-4" x="312.42" y="17.78" smashed="yes">
+<attribute name="NAME" x="314.96" y="17.018" size="1.524" layer="95"/>
+</instance>
+<instance part="NANO-3" gate="-5" x="312.42" y="15.24" smashed="yes">
+<attribute name="NAME" x="314.96" y="14.478" size="1.524" layer="95"/>
+</instance>
+<instance part="NANO-3" gate="-6" x="312.42" y="12.7" smashed="yes">
+<attribute name="NAME" x="314.96" y="11.938" size="1.524" layer="95"/>
+</instance>
+<instance part="C5" gate="G$1" x="335.28" y="35.56" smashed="yes">
+<attribute name="NAME" x="336.804" y="35.941" size="1.778" layer="95"/>
+<attribute name="VALUE" x="336.804" y="30.861" size="1.778" layer="96"/>
+</instance>
+<instance part="R4" gate="G$1" x="345.44" y="55.88" smashed="yes" rot="R270">
+<attribute name="NAME" x="346.9386" y="59.69" size="1.778" layer="95" rot="R270"/>
+<attribute name="VALUE" x="342.138" y="59.69" size="1.778" layer="96" rot="R270"/>
+</instance>
+<instance part="RS485-SLAVE-3" gate="P" x="312.42" y="35.56" smashed="yes" rot="R90">
+<attribute name="NAME" x="313.182" y="34.798" size="1.778" layer="95" rot="R180"/>
+</instance>
+<instance part="RS485-SLAVE-4" gate="G$1" x="388.62" y="55.88" smashed="yes">
+<attribute name="NAME" x="378.46" y="69.85" size="1.778" layer="95"/>
+<attribute name="VALUE" x="378.46" y="40.64" size="1.778" layer="96"/>
+</instance>
+<instance part="NANO-4" gate="-1" x="388.62" y="25.4" smashed="yes">
+<attribute name="NAME" x="391.16" y="24.638" size="1.524" layer="95"/>
+<attribute name="VALUE" x="387.858" y="26.797" size="1.778" layer="96"/>
+</instance>
+<instance part="NANO-4" gate="-2" x="388.62" y="22.86" smashed="yes">
+<attribute name="NAME" x="391.16" y="22.098" size="1.524" layer="95"/>
+</instance>
+<instance part="NANO-4" gate="-3" x="388.62" y="20.32" smashed="yes">
+<attribute name="NAME" x="391.16" y="19.558" size="1.524" layer="95"/>
+</instance>
+<instance part="NANO-4" gate="-4" x="388.62" y="17.78" smashed="yes">
+<attribute name="NAME" x="391.16" y="17.018" size="1.524" layer="95"/>
+</instance>
+<instance part="NANO-4" gate="-5" x="388.62" y="15.24" smashed="yes">
+<attribute name="NAME" x="391.16" y="14.478" size="1.524" layer="95"/>
+</instance>
+<instance part="NANO-4" gate="-6" x="388.62" y="12.7" smashed="yes">
+<attribute name="NAME" x="391.16" y="11.938" size="1.524" layer="95"/>
+</instance>
+<instance part="C6" gate="G$1" x="411.48" y="35.56" smashed="yes">
+<attribute name="NAME" x="413.004" y="35.941" size="1.778" layer="95"/>
+<attribute name="VALUE" x="413.004" y="30.861" size="1.778" layer="96"/>
+</instance>
+<instance part="R5" gate="G$1" x="421.64" y="55.88" smashed="yes" rot="R270">
+<attribute name="NAME" x="423.1386" y="59.69" size="1.778" layer="95" rot="R270"/>
+<attribute name="VALUE" x="418.338" y="59.69" size="1.778" layer="96" rot="R270"/>
+</instance>
+<instance part="RS485-SLAVE-4" gate="P" x="388.62" y="35.56" smashed="yes" rot="R90">
+<attribute name="NAME" x="389.382" y="34.798" size="1.778" layer="95" rot="R180"/>
+</instance>
 </instances>
 <busses>
 </busses>
@@ -9002,6 +9088,36 @@ http://www.fairchildsemi.com/ds/LM/LM7805.pdf</description>
 <pinref part="RS485-SLAVE-2" gate="P" pin="VCC"/>
 <wire x1="228.6" y1="35.56" x2="226.06" y2="35.56" width="0.1524" layer="91"/>
 <label x="223.52" y="35.56" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="NANO-3" gate="-1" pin="S"/>
+<wire x1="309.88" y1="25.4" x2="302.26" y2="25.4" width="0.1524" layer="91"/>
+<label x="309.88" y="25.4" size="1.778" layer="95" rot="R180"/>
+</segment>
+<segment>
+<pinref part="C5" gate="G$1" pin="1"/>
+<wire x1="335.28" y1="38.1" x2="335.28" y2="40.64" width="0.1524" layer="91"/>
+<label x="335.28" y="40.64" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="RS485-SLAVE-3" gate="P" pin="VCC"/>
+<wire x1="304.8" y1="35.56" x2="302.26" y2="35.56" width="0.1524" layer="91"/>
+<label x="299.72" y="35.56" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="NANO-4" gate="-1" pin="S"/>
+<wire x1="386.08" y1="25.4" x2="378.46" y2="25.4" width="0.1524" layer="91"/>
+<label x="386.08" y="25.4" size="1.778" layer="95" rot="R180"/>
+</segment>
+<segment>
+<pinref part="C6" gate="G$1" pin="1"/>
+<wire x1="411.48" y1="38.1" x2="411.48" y2="40.64" width="0.1524" layer="91"/>
+<label x="411.48" y="40.64" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="RS485-SLAVE-4" gate="P" pin="VCC"/>
+<wire x1="381" y1="35.56" x2="378.46" y2="35.56" width="0.1524" layer="91"/>
+<label x="375.92" y="35.56" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="GND" class="0">
@@ -9066,6 +9182,36 @@ http://www.fairchildsemi.com/ds/LM/LM7805.pdf</description>
 <pinref part="RS485-SLAVE-2" gate="P" pin="GND"/>
 <wire x1="243.84" y1="35.56" x2="246.38" y2="35.56" width="0.1524" layer="91"/>
 <label x="243.84" y="35.56" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="NANO-3" gate="-2" pin="S"/>
+<wire x1="309.88" y1="22.86" x2="302.26" y2="22.86" width="0.1524" layer="91"/>
+<label x="309.88" y="22.86" size="1.778" layer="95" rot="R180"/>
+</segment>
+<segment>
+<pinref part="C5" gate="G$1" pin="2"/>
+<wire x1="335.28" y1="30.48" x2="335.28" y2="25.4" width="0.1524" layer="91"/>
+<label x="335.28" y="25.4" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="RS485-SLAVE-3" gate="P" pin="GND"/>
+<wire x1="320.04" y1="35.56" x2="322.58" y2="35.56" width="0.1524" layer="91"/>
+<label x="320.04" y="35.56" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="NANO-4" gate="-2" pin="S"/>
+<wire x1="386.08" y1="22.86" x2="378.46" y2="22.86" width="0.1524" layer="91"/>
+<label x="386.08" y="22.86" size="1.778" layer="95" rot="R180"/>
+</segment>
+<segment>
+<pinref part="C6" gate="G$1" pin="2"/>
+<wire x1="411.48" y1="30.48" x2="411.48" y2="25.4" width="0.1524" layer="91"/>
+<label x="411.48" y="25.4" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="RS485-SLAVE-4" gate="P" pin="GND"/>
+<wire x1="396.24" y1="35.56" x2="398.78" y2="35.56" width="0.1524" layer="91"/>
+<label x="396.24" y="35.56" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="DIMMER_PWM_PIN" class="0">
@@ -9147,6 +9293,22 @@ http://www.fairchildsemi.com/ds/LM/LM7805.pdf</description>
 <pinref part="R3" gate="G$1" pin="1"/>
 <wire x1="261.62" y1="60.96" x2="269.24" y2="60.96" width="0.1524" layer="91"/>
 </segment>
+<segment>
+<pinref part="RS485-SLAVE-3" gate="G$1" pin="B"/>
+<wire x1="325.12" y1="58.42" x2="337.82" y2="58.42" width="0.1524" layer="91"/>
+<label x="327.66" y="58.42" size="1.778" layer="95"/>
+<wire x1="337.82" y1="58.42" x2="337.82" y2="60.96" width="0.1524" layer="91"/>
+<pinref part="R4" gate="G$1" pin="1"/>
+<wire x1="337.82" y1="60.96" x2="345.44" y2="60.96" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="RS485-SLAVE-4" gate="G$1" pin="B"/>
+<wire x1="401.32" y1="58.42" x2="414.02" y2="58.42" width="0.1524" layer="91"/>
+<label x="403.86" y="58.42" size="1.778" layer="95"/>
+<wire x1="414.02" y1="58.42" x2="414.02" y2="60.96" width="0.1524" layer="91"/>
+<pinref part="R5" gate="G$1" pin="1"/>
+<wire x1="414.02" y1="60.96" x2="421.64" y2="60.96" width="0.1524" layer="91"/>
+</segment>
 </net>
 <net name="RS485_A" class="0">
 <segment>
@@ -9175,6 +9337,22 @@ http://www.fairchildsemi.com/ds/LM/LM7805.pdf</description>
 <pinref part="R3" gate="G$1" pin="2"/>
 <wire x1="261.62" y1="50.8" x2="269.24" y2="50.8" width="0.1524" layer="91"/>
 </segment>
+<segment>
+<pinref part="RS485-SLAVE-3" gate="G$1" pin="A"/>
+<wire x1="325.12" y1="53.34" x2="337.82" y2="53.34" width="0.1524" layer="91"/>
+<label x="327.66" y="53.34" size="1.778" layer="95"/>
+<wire x1="337.82" y1="53.34" x2="337.82" y2="50.8" width="0.1524" layer="91"/>
+<pinref part="R4" gate="G$1" pin="2"/>
+<wire x1="337.82" y1="50.8" x2="345.44" y2="50.8" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="RS485-SLAVE-4" gate="G$1" pin="A"/>
+<wire x1="401.32" y1="53.34" x2="414.02" y2="53.34" width="0.1524" layer="91"/>
+<label x="403.86" y="53.34" size="1.778" layer="95"/>
+<wire x1="414.02" y1="53.34" x2="414.02" y2="50.8" width="0.1524" layer="91"/>
+<pinref part="R5" gate="G$1" pin="2"/>
+<wire x1="414.02" y1="50.8" x2="421.64" y2="50.8" width="0.1524" layer="91"/>
+</segment>
 </net>
 <net name="NANO_1_RX" class="0">
 <segment>
@@ -9186,11 +9364,6 @@ http://www.fairchildsemi.com/ds/LM/LM7805.pdf</description>
 <pinref part="NANO-1" gate="-3" pin="S"/>
 <wire x1="157.48" y1="20.32" x2="149.86" y2="20.32" width="0.1524" layer="91"/>
 <label x="157.48" y="20.32" size="1.778" layer="95" rot="R180"/>
-</segment>
-<segment>
-<pinref part="NANO-2" gate="-3" pin="S"/>
-<wire x1="233.68" y1="20.32" x2="226.06" y2="20.32" width="0.1524" layer="91"/>
-<label x="233.68" y="20.32" size="1.778" layer="95" rot="R180"/>
 </segment>
 </net>
 <net name="NANO_1_P2" class="0">
@@ -9209,11 +9382,6 @@ http://www.fairchildsemi.com/ds/LM/LM7805.pdf</description>
 <wire x1="157.48" y1="17.78" x2="149.86" y2="17.78" width="0.1524" layer="91"/>
 <label x="157.48" y="17.78" size="1.778" layer="95" rot="R180"/>
 </segment>
-<segment>
-<pinref part="NANO-2" gate="-4" pin="S"/>
-<wire x1="233.68" y1="17.78" x2="226.06" y2="17.78" width="0.1524" layer="91"/>
-<label x="233.68" y="17.78" size="1.778" layer="95" rot="R180"/>
-</segment>
 </net>
 <net name="NANO_1_TX" class="0">
 <segment>
@@ -9226,17 +9394,17 @@ http://www.fairchildsemi.com/ds/LM/LM7805.pdf</description>
 <wire x1="157.48" y1="15.24" x2="149.86" y2="15.24" width="0.1524" layer="91"/>
 <label x="157.48" y="15.24" size="1.778" layer="95" rot="R180"/>
 </segment>
-<segment>
-<pinref part="NANO-2" gate="-5" pin="S"/>
-<wire x1="233.68" y1="15.24" x2="226.06" y2="15.24" width="0.1524" layer="91"/>
-<label x="233.68" y="15.24" size="1.778" layer="95" rot="R180"/>
-</segment>
 </net>
 <net name="NANO_2_RX" class="0">
 <segment>
 <pinref part="RS485-SLAVE-2" gate="G$1" pin="RO"/>
 <wire x1="223.52" y1="63.5" x2="208.28" y2="63.5" width="0.1524" layer="91"/>
 <label x="208.28" y="63.5" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="NANO-2" gate="-3" pin="S"/>
+<wire x1="233.68" y1="20.32" x2="226.06" y2="20.32" width="0.1524" layer="91"/>
+<label x="233.68" y="20.32" size="1.778" layer="95" rot="R180"/>
 </segment>
 </net>
 <net name="NANO_2_P2" class="0">
@@ -9250,12 +9418,98 @@ http://www.fairchildsemi.com/ds/LM/LM7805.pdf</description>
 <wire x1="220.98" y1="53.34" x2="220.98" y2="58.42" width="0.1524" layer="91"/>
 <junction x="220.98" y="58.42"/>
 </segment>
+<segment>
+<pinref part="NANO-2" gate="-4" pin="S"/>
+<wire x1="233.68" y1="17.78" x2="226.06" y2="17.78" width="0.1524" layer="91"/>
+<label x="233.68" y="17.78" size="1.778" layer="95" rot="R180"/>
+</segment>
 </net>
 <net name="NANO_2_TX" class="0">
 <segment>
 <pinref part="RS485-SLAVE-2" gate="G$1" pin="DI"/>
 <wire x1="223.52" y1="48.26" x2="208.28" y2="48.26" width="0.1524" layer="91"/>
 <label x="208.28" y="48.26" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="NANO-2" gate="-5" pin="S"/>
+<wire x1="233.68" y1="15.24" x2="226.06" y2="15.24" width="0.1524" layer="91"/>
+<label x="233.68" y="15.24" size="1.778" layer="95" rot="R180"/>
+</segment>
+</net>
+<net name="NANO_3_RX" class="0">
+<segment>
+<pinref part="RS485-SLAVE-3" gate="G$1" pin="RO"/>
+<wire x1="299.72" y1="63.5" x2="284.48" y2="63.5" width="0.1524" layer="91"/>
+<label x="284.48" y="63.5" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="NANO-3" gate="-3" pin="S"/>
+<wire x1="309.88" y1="20.32" x2="302.26" y2="20.32" width="0.1524" layer="91"/>
+<label x="309.88" y="20.32" size="1.778" layer="95" rot="R180"/>
+</segment>
+<segment>
+<pinref part="RS485-SLAVE-4" gate="G$1" pin="RO"/>
+<wire x1="375.92" y1="63.5" x2="360.68" y2="63.5" width="0.1524" layer="91"/>
+<label x="360.68" y="63.5" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="NANO-4" gate="-3" pin="S"/>
+<wire x1="386.08" y1="20.32" x2="378.46" y2="20.32" width="0.1524" layer="91"/>
+<label x="386.08" y="20.32" size="1.778" layer="95" rot="R180"/>
+</segment>
+</net>
+<net name="NANO_3_P2" class="0">
+<segment>
+<pinref part="RS485-SLAVE-3" gate="G$1" pin="RE/"/>
+<wire x1="299.72" y1="58.42" x2="297.18" y2="58.42" width="0.1524" layer="91"/>
+<label x="284.48" y="58.42" size="1.778" layer="95"/>
+<pinref part="RS485-SLAVE-3" gate="G$1" pin="DE"/>
+<wire x1="297.18" y1="58.42" x2="284.48" y2="58.42" width="0.1524" layer="91"/>
+<wire x1="299.72" y1="53.34" x2="297.18" y2="53.34" width="0.1524" layer="91"/>
+<wire x1="297.18" y1="53.34" x2="297.18" y2="58.42" width="0.1524" layer="91"/>
+<junction x="297.18" y="58.42"/>
+</segment>
+<segment>
+<pinref part="NANO-3" gate="-4" pin="S"/>
+<wire x1="309.88" y1="17.78" x2="302.26" y2="17.78" width="0.1524" layer="91"/>
+<label x="309.88" y="17.78" size="1.778" layer="95" rot="R180"/>
+</segment>
+<segment>
+<pinref part="RS485-SLAVE-4" gate="G$1" pin="RE/"/>
+<wire x1="375.92" y1="58.42" x2="373.38" y2="58.42" width="0.1524" layer="91"/>
+<label x="360.68" y="58.42" size="1.778" layer="95"/>
+<pinref part="RS485-SLAVE-4" gate="G$1" pin="DE"/>
+<wire x1="373.38" y1="58.42" x2="360.68" y2="58.42" width="0.1524" layer="91"/>
+<wire x1="375.92" y1="53.34" x2="373.38" y2="53.34" width="0.1524" layer="91"/>
+<wire x1="373.38" y1="53.34" x2="373.38" y2="58.42" width="0.1524" layer="91"/>
+<junction x="373.38" y="58.42"/>
+</segment>
+<segment>
+<pinref part="NANO-4" gate="-4" pin="S"/>
+<wire x1="386.08" y1="17.78" x2="378.46" y2="17.78" width="0.1524" layer="91"/>
+<label x="386.08" y="17.78" size="1.778" layer="95" rot="R180"/>
+</segment>
+</net>
+<net name="NANO_3_TX" class="0">
+<segment>
+<pinref part="RS485-SLAVE-3" gate="G$1" pin="DI"/>
+<wire x1="299.72" y1="48.26" x2="284.48" y2="48.26" width="0.1524" layer="91"/>
+<label x="284.48" y="48.26" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="NANO-3" gate="-5" pin="S"/>
+<wire x1="309.88" y1="15.24" x2="302.26" y2="15.24" width="0.1524" layer="91"/>
+<label x="309.88" y="15.24" size="1.778" layer="95" rot="R180"/>
+</segment>
+<segment>
+<pinref part="RS485-SLAVE-4" gate="G$1" pin="DI"/>
+<wire x1="375.92" y1="48.26" x2="360.68" y2="48.26" width="0.1524" layer="91"/>
+<label x="360.68" y="48.26" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="NANO-4" gate="-5" pin="S"/>
+<wire x1="386.08" y1="15.24" x2="378.46" y2="15.24" width="0.1524" layer="91"/>
+<label x="386.08" y="15.24" size="1.778" layer="95" rot="R180"/>
 </segment>
 </net>
 </nets>

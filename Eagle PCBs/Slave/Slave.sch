@@ -8425,6 +8425,74 @@ grid 2.54 mm</description>
 </deviceset>
 </devicesets>
 </library>
+<library name="con-molex" urn="urn:adsk.eagle:library:165">
+<description>&lt;b&gt;Molex Connectors&lt;/b&gt;&lt;p&gt;
+&lt;author&gt;Created by librarian@cadsoft.de&lt;/author&gt;</description>
+<packages>
+<package name="KK-156-2" urn="urn:adsk.eagle:footprint:8078402/1" library_version="5">
+<description>&lt;b&gt;KK® 396 Header, Vertical, Friction Lock, 2 Circuits, Tin (Sn) Plating&lt;/b&gt;&lt;p&gt;&lt;a href =http://www.molex.com/pdm_docs/sd/026604020_sd.pdf&gt;Datasheet &lt;/a&gt;</description>
+<wire x1="3.81" y1="4.95" x2="2.01" y2="4.95" width="0.2032" layer="21"/>
+<wire x1="2.01" y1="4.95" x2="-1.985" y2="4.95" width="0.2032" layer="21"/>
+<wire x1="-1.985" y1="4.95" x2="-3.785" y2="4.95" width="0.2032" layer="21"/>
+<wire x1="-3.785" y1="4.95" x2="-3.785" y2="-4.825" width="0.2032" layer="21"/>
+<wire x1="-3.785" y1="-4.825" x2="3.81" y2="-4.825" width="0.2032" layer="21"/>
+<wire x1="3.81" y1="-4.825" x2="3.81" y2="4.95" width="0.2032" layer="21"/>
+<wire x1="-1.985" y1="2.525" x2="2.01" y2="2.525" width="0.2032" layer="21"/>
+<wire x1="2.01" y1="2.525" x2="2.01" y2="4.95" width="0.2032" layer="21"/>
+<wire x1="-1.985" y1="2.525" x2="-1.985" y2="4.95" width="0.2032" layer="21"/>
+<pad name="1" x="-1.98" y="0" drill="1.7" diameter="2.1844" shape="long" rot="R90"/>
+<pad name="2" x="1.98" y="0" drill="1.7" diameter="2.1844" shape="long" rot="R90"/>
+<text x="-4.48" y="-4.445" size="1.27" layer="25" rot="R90">&gt;NAME</text>
+<text x="5.75" y="-4.445" size="1.27" layer="27" rot="R90">&gt;VALUE</text>
+</package>
+</packages>
+<packages3d>
+<package3d name="KK-156-2" urn="urn:adsk.eagle:package:8078800/1" type="box" library_version="5">
+<description>&lt;b&gt;KK® 396 Header, Vertical, Friction Lock, 2 Circuits, Tin (Sn) Plating&lt;/b&gt;&lt;p&gt;&lt;a href =http://www.molex.com/pdm_docs/sd/026604020_sd.pdf&gt;Datasheet &lt;/a&gt;</description>
+<packageinstances>
+<packageinstance name="KK-156-2"/>
+</packageinstances>
+</package3d>
+</packages3d>
+<symbols>
+<symbol name="MV" urn="urn:adsk.eagle:symbol:6783/2" library_version="5">
+<wire x1="1.27" y1="0" x2="0" y2="0" width="0.6096" layer="94"/>
+<text x="2.54" y="-0.762" size="1.524" layer="95">&gt;NAME</text>
+<text x="-0.762" y="1.397" size="1.778" layer="96">&gt;VALUE</text>
+<pin name="S" x="-2.54" y="0" visible="off" length="short" direction="pas"/>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="KK-156-2" urn="urn:adsk.eagle:component:8079127/3" prefix="X" uservalue="yes" library_version="5">
+<description>&lt;b&gt;KK 156 HEADER&lt;/b&gt;&lt;p&gt;
+Source: http://www.molex.com/pdm_docs/sd/026604100_sd.pdf</description>
+<gates>
+<gate name="-1" symbol="MV" x="0" y="2.54" addlevel="always" swaplevel="1"/>
+<gate name="-2" symbol="MV" x="0" y="-2.54" addlevel="always" swaplevel="1"/>
+</gates>
+<devices>
+<device name="" package="KK-156-2">
+<connects>
+<connect gate="-1" pin="S" pad="1"/>
+<connect gate="-2" pin="S" pad="2"/>
+</connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:8078800/1"/>
+</package3dinstances>
+<technologies>
+<technology name="">
+<attribute name="MF" value="MOLEX" constant="no"/>
+<attribute name="MPN" value="" constant="no"/>
+<attribute name="OC_FARNELL" value="unknown" constant="no"/>
+<attribute name="OC_NEWARK" value="unknown" constant="no"/>
+<attribute name="POPULARITY" value="10" constant="no"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -8443,15 +8511,16 @@ grid 2.54 mm</description>
 <part name="R2" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="0207/10" package3d_urn="urn:adsk.eagle:package:23491/2" value="1K"/>
 <part name="Q1" library="transistor-power" library_urn="urn:adsk.eagle:library:400" deviceset="TIP120" device="" package3d_urn="urn:adsk.eagle:package:29488/1"/>
 <part name="UPLINK" library="pinhead" library_urn="urn:adsk.eagle:library:325" deviceset="PINHD-1X4" device="" package3d_urn="urn:adsk.eagle:package:22407/2"/>
+<part name="LED" library="con-molex" library_urn="urn:adsk.eagle:library:165" deviceset="KK-156-2" device="" package3d_urn="urn:adsk.eagle:package:8078800/1"/>
 </parts>
 <sheets>
 <sheet>
 <plain>
-<text x="106.68" y="73.66" size="1.778" layer="97">LED Dimmer</text>
-<wire x1="101.6" y1="78.74" x2="142.24" y2="78.74" width="0.1524" layer="97"/>
-<wire x1="142.24" y1="78.74" x2="142.24" y2="2.54" width="0.1524" layer="97"/>
+<text x="106.68" y="55.88" size="1.778" layer="97">LED Dimmer</text>
+<wire x1="101.6" y1="60.96" x2="142.24" y2="60.96" width="0.1524" layer="97"/>
+<wire x1="142.24" y1="60.96" x2="142.24" y2="2.54" width="0.1524" layer="97"/>
 <wire x1="142.24" y1="2.54" x2="101.6" y2="2.54" width="0.1524" layer="97"/>
-<wire x1="101.6" y1="2.54" x2="101.6" y2="78.74" width="0.1524" layer="97"/>
+<wire x1="101.6" y1="2.54" x2="101.6" y2="60.96" width="0.1524" layer="97"/>
 <wire x1="2.54" y1="2.54" x2="2.54" y2="30.48" width="0.1524" layer="97"/>
 <wire x1="2.54" y1="30.48" x2="30.48" y2="30.48" width="0.1524" layer="97"/>
 <wire x1="30.48" y1="30.48" x2="30.48" y2="2.54" width="0.1524" layer="97"/>
@@ -8485,17 +8554,25 @@ grid 2.54 mm</description>
 <attribute name="NAME" x="9.1186" y="48.006" size="1.778" layer="95" rot="R270"/>
 <attribute name="VALUE" x="4.318" y="48.006" size="1.778" layer="96" rot="R270"/>
 </instance>
-<instance part="R2" gate="G$1" x="109.22" y="48.26" smashed="yes" rot="R270">
-<attribute name="NAME" x="110.7186" y="52.07" size="1.778" layer="95" rot="R270"/>
-<attribute name="VALUE" x="105.918" y="52.07" size="1.778" layer="96" rot="R270"/>
+<instance part="R2" gate="G$1" x="116.84" y="22.86" smashed="yes">
+<attribute name="NAME" x="113.03" y="24.3586" size="1.778" layer="95"/>
+<attribute name="VALUE" x="113.03" y="19.558" size="1.778" layer="96"/>
 </instance>
-<instance part="Q1" gate="1" x="116.84" y="25.4" smashed="yes">
-<attribute name="NAME" x="121.92" y="27.94" size="1.778" layer="95"/>
-<attribute name="VALUE" x="121.92" y="25.4" size="1.778" layer="96"/>
+<instance part="Q1" gate="1" x="121.92" y="12.7" smashed="yes" rot="R270">
+<attribute name="NAME" x="116.84" y="15.24" size="1.778" layer="95"/>
+<attribute name="VALUE" x="116.84" y="7.62" size="1.778" layer="96"/>
 </instance>
 <instance part="UPLINK" gate="A" x="25.4" y="15.24" smashed="yes">
 <attribute name="NAME" x="6.35" y="26.035" size="1.778" layer="95"/>
 <attribute name="VALUE" x="19.05" y="7.62" size="1.778" layer="96"/>
+</instance>
+<instance part="LED" gate="-1" x="121.92" y="48.26" smashed="yes" rot="R180">
+<attribute name="NAME" x="119.38" y="49.022" size="1.524" layer="95" rot="R180"/>
+<attribute name="VALUE" x="122.682" y="46.863" size="1.778" layer="96" rot="R180"/>
+</instance>
+<instance part="LED" gate="-2" x="121.92" y="43.18" smashed="yes" rot="R180">
+<attribute name="NAME" x="119.38" y="43.942" size="1.524" layer="95" rot="R180"/>
+<attribute name="VALUE" x="122.682" y="41.783" size="1.778" layer="96" rot="R180"/>
 </instance>
 </instances>
 <busses>
@@ -8506,6 +8583,11 @@ grid 2.54 mm</description>
 <wire x1="5.08" y1="20.32" x2="22.86" y2="20.32" width="0.1524" layer="91"/>
 <label x="7.62" y="20.32" size="1.778" layer="95"/>
 <pinref part="UPLINK" gate="A" pin="1"/>
+</segment>
+<segment>
+<pinref part="LED" gate="-1" pin="S"/>
+<wire x1="124.46" y1="48.26" x2="137.16" y2="48.26" width="0.1524" layer="91"/>
+<label x="127" y="48.26" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="RS485_A" class="0">
@@ -8544,8 +8626,8 @@ grid 2.54 mm</description>
 </segment>
 <segment>
 <pinref part="Q1" gate="1" pin="E"/>
-<wire x1="119.38" y1="20.32" x2="119.38" y2="10.16" width="0.1524" layer="91"/>
-<label x="119.38" y="10.16" size="1.778" layer="95" rot="R90"/>
+<wire x1="116.84" y1="10.16" x2="106.68" y2="10.16" width="0.1524" layer="91"/>
+<label x="106.68" y="10.16" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="NANO_D2" class="0">
@@ -8592,23 +8674,25 @@ grid 2.54 mm</description>
 <net name="N$2" class="0">
 <segment>
 <pinref part="R2" gate="G$1" pin="2"/>
-<wire x1="109.22" y1="43.18" x2="109.22" y2="25.4" width="0.1524" layer="91"/>
 <pinref part="Q1" gate="1" pin="B"/>
-<wire x1="109.22" y1="25.4" x2="114.3" y2="25.4" width="0.1524" layer="91"/>
+<wire x1="121.92" y1="22.86" x2="121.92" y2="15.24" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="LED_GND" class="0">
 <segment>
 <pinref part="Q1" gate="1" pin="C"/>
-<wire x1="119.38" y1="30.48" x2="119.38" y2="35.56" width="0.1524" layer="91"/>
-<label x="119.38" y="35.56" size="1.778" layer="95" rot="R90"/>
+<wire x1="127" y1="10.16" x2="137.16" y2="10.16" width="0.1524" layer="91"/>
+<label x="137.16" y="20.32" size="1.778" layer="95" rot="R90"/>
+<pinref part="LED" gate="-2" pin="S"/>
+<wire x1="124.46" y1="43.18" x2="137.16" y2="43.18" width="0.1524" layer="91"/>
+<wire x1="137.16" y1="43.18" x2="137.16" y2="10.16" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="NANO_D3" class="0">
 <segment>
 <pinref part="R2" gate="G$1" pin="1"/>
-<wire x1="109.22" y1="53.34" x2="109.22" y2="68.58" width="0.1524" layer="91"/>
-<label x="109.22" y="55.88" size="1.778" layer="95" rot="R90"/>
+<wire x1="111.76" y1="22.86" x2="106.68" y2="22.86" width="0.1524" layer="91"/>
+<label x="109.22" y="22.86" size="1.778" layer="95" rot="R90"/>
 </segment>
 </net>
 <net name="NANO_RX" class="0">

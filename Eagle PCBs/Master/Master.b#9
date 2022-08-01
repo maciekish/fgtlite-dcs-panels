@@ -156,15 +156,15 @@
 <hole x="1.22" y="3.78" drill="2.159"/>
 </package>
 <package name="GX12-7P">
-<pad name="7" x="0" y="0" drill="1.6"/>
+<pad name="7" x="0" y="0" drill="1.6002" diameter="1.9304"/>
 <circle x="0" y="0" radius="7.5" width="0.127" layer="21"/>
 <text x="-6.35" y="9.227" size="1.27" layer="25" ratio="10">&gt;NAME</text>
-<pad name="1" x="0" y="2.75" drill="1.6"/>
-<pad name="2" x="2.3815" y="1.375" drill="1.6"/>
-<pad name="3" x="2.3815" y="-1.375" drill="1.6"/>
-<pad name="4" x="0" y="-2.75" drill="1.6"/>
-<pad name="5" x="-2.3815" y="-1.375" drill="1.6"/>
-<pad name="6" x="-2.3815" y="1.375" drill="1.6"/>
+<pad name="1" x="0" y="2.75" drill="1.6002" diameter="1.9304"/>
+<pad name="2" x="2.3815" y="1.375" drill="1.6002" diameter="1.9304"/>
+<pad name="3" x="2.3815" y="-1.375" drill="1.6002" diameter="1.9304"/>
+<pad name="4" x="0" y="-2.75" drill="1.6002" diameter="1.9304"/>
+<pad name="5" x="-2.3815" y="-1.375" drill="1.6002" diameter="1.9304"/>
+<pad name="6" x="-2.3815" y="1.375" drill="1.6002" diameter="1.9304"/>
 </package>
 <package name="DIL08" urn="urn:adsk.eagle:footprint:29416/1">
 <description>&lt;b&gt;Dual In Line Package&lt;/b&gt;</description>

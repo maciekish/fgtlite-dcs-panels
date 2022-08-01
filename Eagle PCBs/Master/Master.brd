@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="50" unitdist="mil" unit="mil" style="lines" multiple="1" display="no" altdistance="5" altunitdist="mil" altunit="mil"/>
+<grid distance="50" unitdist="mil" unit="mm" style="lines" multiple="1" display="no" altdistance="5" altunitdist="mil" altunit="mil"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
@@ -113,10 +113,10 @@
 <wire x1="87.3" y1="34.62" x2="85.1" y2="36.82" width="0" layer="20"/>
 <wire x1="85.1" y1="36.82" x2="2.53" y2="36.82" width="0" layer="20"/>
 <wire x1="2.53" y1="36.82" x2="0" y2="34.29" width="0" layer="20"/>
-<hole x="3.81" y="33.02" drill="4"/>
-<hole x="3.81" y="3.81" drill="4"/>
-<hole x="83.82" y="33.02" drill="4"/>
-<hole x="83.82" y="3.81" drill="4"/>
+<hole x="3.81" y="33.02" drill="3.5"/>
+<hole x="3.81" y="3.81" drill="3.5"/>
+<hole x="83.82" y="33.02" drill="3.5"/>
+<hole x="83.82" y="3.81" drill="3.5"/>
 <text x="70.612" y="32.131" size="1.6764" layer="25">VIN</text>
 <text x="70.612" y="29.718" size="1.6764" layer="25">GND</text>
 <text x="70.612" y="27.051" size="1.6764" layer="25">5V</text>

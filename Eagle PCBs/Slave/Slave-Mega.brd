@@ -106,17 +106,27 @@
 </layers>
 <board>
 <plain>
-<wire x1="0" y1="0" x2="56.82" y2="0" width="0" layer="20"/>
-<wire x1="56.82" y1="0" x2="56.82" y2="58.41" width="0" layer="20"/>
-<wire x1="56.82" y1="58.41" x2="0" y2="58.41" width="0" layer="20"/>
-<wire x1="0" y1="58.41" x2="0" y2="0" width="0" layer="20"/>
+<wire x1="0" y1="54.61" x2="0" y2="3.81" width="0" layer="20"/>
+<wire x1="0" y1="3.81" x2="3.81" y2="0" width="0" layer="20"/>
+<wire x1="3.81" y1="0" x2="53.34" y2="0" width="0" layer="20"/>
+<wire x1="53.34" y1="0" x2="56.82" y2="3.48" width="0" layer="20"/>
+<wire x1="56.82" y1="3.48" x2="56.82" y2="54.94" width="0" layer="20"/>
+<wire x1="56.82" y1="54.94" x2="53.35" y2="58.41" width="0" layer="20"/>
+<wire x1="53.35" y1="58.41" x2="3.8" y2="58.41" width="0" layer="20"/>
+<wire x1="3.8" y1="58.41" x2="0" y2="54.61" width="0" layer="20"/>
 <hole x="5.08" y="5.08" drill="5"/>
 <hole x="5.08" y="53.34" drill="5"/>
 <hole x="52.07" y="5.08" drill="5"/>
 <hole x="52.07" y="53.34" drill="5"/>
 <text x="11.303" y="52.324" size="2.54" layer="25">RS485 Mega Slave V1</text>
-<text x="23.749" y="102.108" size="3.81" layer="25" rot="R347">BRRRRT</text>
 <text x="26.67" y="48.26" size="2.54" layer="25" rot="R300">BRRRRRT</text>
+<text x="29.718" y="0.381" size="1.016" layer="25" rot="R90">GND</text>
+<text x="32.258" y="1.143" size="1.016" layer="25" rot="R90">VIN</text>
+<text x="34.798" y="1.651" size="1.016" layer="25" rot="R90">5V</text>
+<text x="37.338" y="1.651" size="1.016" layer="25" rot="R90">D3</text>
+<text x="39.878" y="1.651" size="1.016" layer="25" rot="R90">D2</text>
+<text x="42.418" y="1.651" size="1.016" layer="25" rot="R90">TX</text>
+<text x="44.958" y="1.651" size="1.016" layer="25" rot="R90">RX</text>
 </plain>
 <libraries>
 <library name="rcl" urn="urn:adsk.eagle:library:334">

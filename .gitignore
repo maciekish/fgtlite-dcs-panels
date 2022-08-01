@@ -16,3 +16,17 @@ xcuserdata
 # svn & cvs
 .svn
 CVS
+
+#Eagle
+# Backup files
+*.s#?
+*.b#?
+*.l#?
+*.b$?
+*.s$?
+*.l$?
+*.s#*
+*.b#*
+# Autorouter files
+*.pro
+*.job
